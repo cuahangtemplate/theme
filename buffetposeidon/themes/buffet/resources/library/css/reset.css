@@ -1,0 +1,76 @@
+/* <reset.css> */
+    html {overflow-x: hidden;}
+    html, 
+    body {
+        min-height: 100%;
+        background: #fff;
+    }
+    body {
+        color: #444;    
+        font: 400 14px/22px 'Montserrat', sans-serif;
+    }
+    *, 
+    :before, 
+    :after {
+        margin: 0;
+        padding: 0;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -o-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    :before, 
+    :after {
+        font-weight: normal;
+    }
+    .uk-list{
+        margin: 0;
+        padding: 0;
+        list-style-position: inside;
+    }
+    .relative{
+        position: relative;
+    }
+    form input[type=checkbox]:not(:disabled),
+    form input[type=radio]:not(:disabled) {
+        margin: 0 5px 0 0;
+        cursor: pointer;
+        vertical-align: middle;
+    }
+    @media (min-width: 1220px) {
+        .uk-container {
+            width: 1170px;
+            max-width: none;
+            padding: 0;
+        }
+        .uk-container-wrap{
+            width: 100%;
+            padding: 0 15px;
+        }
+        .uk-container-news{
+            width: 1030px;
+            padding: 0 15px;
+        }
+    }
+    @media (max-width: 1220px) {
+        .uk-container, .uk-container-wrap, .uk-container-news {padding: 0 10px}
+    }
+    #goTop {
+        position: fixed;
+        z-index: 9999; 
+        right: 30px;
+        clip: rect(auto, auto, auto, auto);
+        text-indent: -9999px;
+        display: block;
+        width: 45px;height: 45px;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        -webkit-background-size: 45px;
+        background-size: 45px;
+        background-image: url('../img/toTop.png');
+    }
+    @media (max-width: 1220px) {
+        #goTop {right: 5px;}
+    }
+/* </reset.css> */

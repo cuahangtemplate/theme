@@ -1,0 +1,536 @@
+
+
+/*************************
+	-	Slider	-
+**************************/
+.rev_slider_wrapper >ul {
+	visibility: hidden;
+}
+.rev_slider {
+	overflow: visible;
+}
+.rev_slider img {
+	max-width: none !important;
+	margin: 0px;
+	padding: 0px;
+	border-width: 0px;
+	border: none;
+	visibility: visible !important;
+}
+.rev_slider .no-slides-text {
+	font-weight: bold;
+	text-align: center;
+	padding-top: 80px;
+}
+.rev_slider ul {
+	margin: 0px;
+	padding: 0px;
+	list-style: none !important;
+	list-style-type: none;
+	background-position: 0px 0px;
+}
+.rev_slider ul li, .rev_slider >ul >li, .rev_slider >ul >li:before {
+	list-style: none !important;
+	position: absolute;
+	visibility: hidden;
+	margin: 0px !important;
+	padding: 0px !important;
+	overflow-x: visible;
+	overflow-y: visible;
+	list-style-type: none !important;
+	background-image: none;
+	background-position: 0px 0px;
+	text-indent: 0em;
+}
+.rev_slider .tp-caption, .rev_slider .caption {
+/* 	position: absolute;
+	visibility: hidden; */
+}
+.tp-simpleresponsive img {
+	max-width: none;
+}
+/* ADDED FOR SLIDELINK MANAGEMENT */
+.tp-caption {
+	z-index: 1;
+}
+.tp_inner_padding {
+	box-sizing: border-box;
+	max-height: none !important;
+}
+.tp-hide-revslider, .tp-caption.tp-hidden-caption {
+	visibility: hidden !important;
+	display: none !important;
+}
+.noFilterClass {
+}
+.fullscreen-container {
+	width: 100%;
+	position: relative;
+	padding: 0;
+	margin: auto;
+}
+.fullwidthbanner-container {
+	width: 100%;
+	position: relative;
+	padding: 0;
+	overflow: hidden;
+	margin: auto;
+}
+.fullwidthbanner-container .fullwidthabanner {
+	width: 100%;
+	margin: auto;
+}
+.tp-simpleresponsive .slotholder *, .tp-simpleresponsive img {
+}
+.tp-simpleresponsive .caption, .tp-simpleresponsive .tp-caption {
+	width: 100%;
+	margin: auto;
+}
+
+#rev_slider_4_wrapper .image-logo img {
+  	width: 100%;
+}
+#rev_slider_4_wrapper .info {
+    width: 100%;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+    max-width: 700px;
+    z-index: 99;
+}
+#rev_slider_4_wrapper .info h3 {
+    font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 22px;
+	text-align: center;
+	color: #fff;
+}
+#rev_slider_4_wrapper .info .book-floor .btn.btn-book{
+	line-height: 26px;
+	font-weight: 500;
+}
+
+/*	BUTTON COLORS	*/
+
+.tp-button.green, .tp-button:hover.green, .purchase.green, .purchase:hover.green {
+	background-color: #21a117;
+	box-shadow: 0px 3px 0px 0px #104d0b;
+}
+.tp-button.blue, .tp-button:hover.blue, .purchase.blue, .purchase:hover.blue {
+	background-color: #1d78cb;
+	box-shadow: 0px 3px 0px 0px #0f3e68;
+}
+.tp-button.red, .tp-button:hover.red, .purchase.red, .purchase:hover.red {
+	background-color: #cb1d1d;
+	box-shadow: 0px 3px 0px 0px #7c1212;
+}
+.tp-button.orange, .tp-button:hover.orange, .purchase.orange, .purchase:hover.orange {
+	background-color: #ff7700;
+	box-shadow: 0px 3px 0px 0px #a34c00;
+}
+.tp-button.darkgrey, .tp-button.grey, .tp-button:hover.darkgrey, .tp-button:hover.grey, .purchase.darkgrey, .purchase:hover.darkgrey {
+	background-color: #555;
+	box-shadow: 0px 3px 0px 0px #222;
+}
+.tp-button.lightgrey, .tp-button:hover.lightgrey, .purchase.lightgrey, .purchase:hover.lightgrey {
+	background-color: #888;
+	box-shadow: 0px 3px 0px 0px #555;
+}
+/************************
+	-	NAVIGATION	-
+*************************/
+
+/** BULLETS **/
+
+.tpclear {
+	clear: both;
+}
+.tp-bullets {
+	z-index: 1000;
+	position: absolute;
+	opacity: 1;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+}
+.tp-bullets.hidebullets {
+	/*opacity: 0;*/
+}
+.tp-bullets.simplebullets.round .bullet.last {
+	margin-right: 3px;
+}
+.tp-bullets.simplebullets.round-old .bullet.last {
+	margin-right: 0px;
+}
+/**	SQUARE BULLETS **/
+
+.tp-bullets.simplebullets.square .bullet.last {
+	margin-right: 0px;
+}
+/**	SQUARE BULLETS **/
+
+.tp-bullets.simplebullets.square-old .bullet.last {
+	margin-right: 0px;
+}
+/** navbar NAVIGATION VERSION **/
+
+.tp-bullets.simplebullets.navbar .bullet.first {
+	margin-left: 0px !important;
+}
+.tp-bullets.simplebullets.navbar .bullet.last {
+	margin-right: 0px !important;
+}
+/** navbar NAVIGATION VERSION **/
+
+.tp-bullets.simplebullets.navbar-old .bullet.first {
+	margin-left: 0px !important;
+}
+.tp-bullets.simplebullets.navbar-old .bullet.last {
+	margin-right: 0px !important;
+}
+.tp-bullets.simplebullets .bullet:hover, .tp-bullets.simplebullets .bullet.selected {
+	background-position: top left;
+}
+.tp-bullets.simplebullets.round .bullet:hover, .tp-bullets.simplebullets.round .bullet.selected, .tp-bullets.simplebullets.navbar .bullet:hover, .tp-bullets.simplebullets.navbar .bullet.selected {
+	background-position: bottom left;
+}
+.tp-bullets .bullet {
+	width: 9px;
+	height: 9px;
+	background-color: #fff;
+	border-radius: 20px;
+	margin: 0 3px;
+}
+.tp-bullets .bullet.selected {
+  	background-color: #FF9C00;
+}
+/*************************************
+	-	TP ARROWS 	-
+**************************************/
+.tparrows {
+	opacity: 1;
+}
+.tparrows.hidearrows {
+/*-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	-moz-opacity: 0;
+	-khtml-opacity: 0;
+	opacity: 0;*/
+}
+.tp-leftarrow {
+	z-index: 100;
+	cursor: pointer;
+	position: relative;
+	width: 40px;
+	height: 40px;
+}
+.tp-rightarrow {
+	z-index: 100;
+	cursor: pointer;
+	position: relative;
+	width: 40px;
+	height: 40px;
+}
+.tp-leftarrow.navbar-old.thumbswitharrow {
+	margin-right: 10px;
+}
+.tp-rightarrow.navbar-old.thumbswitharrow {
+	margin-left: 0px;
+}
+.tp-leftarrow.default {
+	z-index: 100;
+	cursor: pointer;
+	position: relative;
+	background: #fff;
+	width: 40px;
+	height: 45px;
+	left: 0px !important;
+	opacity: 0;
+	background-size: 10px
+}
+.tp-rightarrow.default {
+	z-index: 100;
+	cursor: pointer;
+	position: relative;
+	background: #fff;
+	width: 40px;
+	height: 45px;
+	right: 0 !important;
+	opacity: 0;
+	background-size: 10px
+}
+#rev_slider_4_wrapper:hover .tp-rightarrow.default {
+	opacity: 1;
+    z-index: 20;
+  	background-color: transparent;
+    color: #fff;
+}
+#rev_slider_4_wrapper:hover .tp-leftarrow.default {
+	opacity: 1;
+    z-index: 20;
+  	background-color: transparent;
+    color: #fff;
+}
+.tp-bullets.tp-thumbs {
+	/*z-index: 1000; */
+	position: absolute;
+	padding: 3px;
+	background-color: #fff;
+	width: 500px;
+	height: 50px; 			/* THE DIMENSIONS OF THE THUMB CONTAINER */
+	margin-top: -50px;
+	vertical-align: top;
+	display: none;
+}
+.tp-bullets.tp-thumbs img {
+	vertical-align: top;
+}
+.fullwidthbanner-container .tp-thumbs {
+	padding: 3px;
+	margin: auto -160px !important;
+}
+.tp-bullets.tp-thumbs .tp-mask {
+	width: 500px;
+	height: 50px;  			/* THE DIMENSIONS OF THE THUMB CONTAINER */
+	overflow: hidden;
+	position: relative;
+}
+.tp-bullets.tp-thumbs .tp-mask .tp-thumbcontainer {
+	width: 500px;
+	position: absolute;
+}
+.tp-bullets.tp-thumbs .bullet {
+	width: 100px;
+	height: 50px; 			/* THE DIMENSION OF A SINGLE THUMB */
+	cursor: pointer;
+	overflow: hidden;
+	background: none;
+	margin: 0;
+	float: left;
+}
+.tp-bullets.tp-thumbs .bullet:hover, .tp-bullets.tp-thumbs .bullet.selected {
+	opacity: 1;
+}
+.tp-thumbs img {
+	width: 100%;
+}
+/************************************
+		-	TP BANNER TIMER		-
+*************************************/
+
+.tp-bannertimer.tp-bottom {
+	top: auto;
+	bottom: 0px !important;
+	height: 5px;
+}
+/******************************
+	-	HTML5 VIDEO SETTINGS	-
+********************************/
+
+.vjs-tech {
+	margin-top: 1px
+}
+.tp-caption .vjs-default-skin .vjs-big-play-button {
+	left: 50%;
+	top: 50%;
+	margin-left: -20px;
+	margin-top: -20px;
+	width: 40px;
+	height: 40px;
+	border-radius: 5px;
+	border: none;
+	box-shadow: none;
+	text-shadow: none;
+	line-height: 30px;
+	vertical-align: top;
+	padding: 0px;
+}
+.tp-caption .vjs-default-skin .vjs-big-play-button:before {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	line-height: 40px;
+	text-shadow: none !important;
+	color: #fff;
+	font-size: 18px;
+}
+.tp-caption .vjs-default-skin:hover .vjs-big-play-button, .vjs-default-skin .vjs-big-play-button:focus {
+	box-shadow: none;
+}
+.tp-simpleresponsive img {
+}
+.tp-caption img {
+	background: transparent;
+}
+.tp-simpleresponsive ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.tp-simpleresponsive >ul li {
+	list-style: none;
+	position: absolute;
+	visibility: hidden;
+}
+/*  CAPTION SLIDELINK   **/
+.tp-leftarrow.default, .tp-rightarrow.default {
+	font-family: FontAwesome;
+	font-size: 11px;
+	font-weight: normal;
+	height: 45px;
+	width: 40px;
+	text-align: center;
+	line-height: 44px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.tp-leftarrow.default{
+	background-image: url('../../images/prev.png');
+}
+.tp-rightarrow.default{
+	background-image: url('../../images/next.png');
+}
+.forcefullwidth_wrapper_tp_banner, .fullwidthbanner-container {
+	margin: auto !important;
+}
+#thm-slideshow .col-lg-8 {
+	
+}
+#thm-slideshow .col-lg-4 {
+	
+}
+.hot-deal .col-sm-12 .product-grid-image img{ max-width: 100%;
+    width: 100%;}
+
+
+/*	BUTTON COLORS	*/
+
+.tp-button.green, .tp-button:hover.green, .purchase.green, .purchase:hover.green {
+	background-color: #21a117;
+	box-shadow: 0px 3px 0px 0px #104d0b;
+}
+.tp-button.blue, .tp-button:hover.blue, .purchase.blue, .purchase:hover.blue {
+	background-color: #1d78cb;
+	box-shadow: 0px 3px 0px 0px #0f3e68;
+}
+.tp-button.red, .tp-button:hover.red, .purchase.red, .purchase:hover.red {
+	background-color: #cb1d1d;
+	box-shadow: 0px 3px 0px 0px #7c1212;
+}
+.tp-button.orange, .tp-button:hover.orange, .purchase.orange, .purchase:hover.orange {
+	background-color: #ff7700;
+	box-shadow: 0px 3px 0px 0px #a34c00;
+}
+.tp-button.darkgrey, .tp-button.grey, .tp-button:hover.darkgrey, .tp-button:hover.grey, .purchase.darkgrey, .purchase:hover.darkgrey {
+	background-color: #555;
+	box-shadow: 0px 3px 0px 0px #222;
+}
+.tp-button.lightgrey, .tp-button:hover.lightgrey, .purchase.lightgrey, .purchase:hover.lightgrey {
+	background-color: #888;
+	box-shadow: 0px 3px 0px 0px #555;
+}
+
+/*************************************
+	-	TP ARROWS 	-
+**************************************/
+.tparrows {
+	opacity: 1;
+}
+
+.tp-leftarrow.navbar-old.thumbswitharrow {
+	margin-right: 10px;
+}
+.tp-rightarrow.navbar-old.thumbswitharrow {
+	margin-left: 0px;
+}
+.thm-slideshow .tp-leftarrow.default, .thm-slideshow .tp-rightarrow.default{opacity: 0;}
+
+.tp-simpleresponsive >ul li:hover .tp-leftarrow.default {
+	z-index: 99;
+	cursor: pointer;
+	position: relative;
+	background: #fff;
+	width: 45px;
+	height: 45px;
+	left: 0px !important; color:#000;
+    text-align: center; opacity: 1;
+}
+.tp-simpleresponsive >ul li:hover .tp-rightarrow.default {
+	z-index: 99;
+	cursor: pointer;
+	position: relative;
+	background: #fff;
+	width: 45px;
+	height: 45px;
+	right: 0px !important; color:#000;
+    text-align: center; opacity: 1;
+}
+
+.tp-simpleresponsive >ul li:hover .tp-rightarrow.default {
+	opacity: 1
+}
+.tp-simpleresponsive >ul li:hover .tp-leftarrow.default {
+	opacity: 1
+}
+.tp-bullets.tp-thumbs {
+	/*z-index: 1000; */
+	position: absolute;
+	padding: 3px;
+	background-color: rgba(255,255,255,0.6);
+	width: 500px;
+	height: 50px; 			/* THE DIMENSIONS OF THE THUMB CONTAINER */
+	margin-top: -50px;
+	vertical-align: top;
+	z-index: 99;
+}
+.tp-bullets.tp-thumbs img {
+	vertical-align: top;
+}
+.fullwidthbanner-container .tp-thumbs {
+	padding: 3px;
+}
+.tp-bullets.tp-thumbs .tp-mask {
+	width: 500px;
+	height: 50px;  			/* THE DIMENSIONS OF THE THUMB CONTAINER */
+	overflow: hidden;
+	position: relative;
+}
+.tp-bullets.tp-thumbs .tp-mask .tp-thumbcontainer {
+	width: 500px;
+	position: absolute;
+}
+.tp-bullets.tp-thumbs .bullet {
+	width: 100px;
+	height: 50px; 			/* THE DIMENSION OF A SINGLE THUMB */
+	cursor: pointer;
+	overflow: hidden;
+	background: none;
+	margin: 0;
+	float: left;
+}
+.tp-bullets.tp-thumbs .bullet:hover, .tp-bullets.tp-thumbs .bullet.selected {
+	opacity: 1;
+}
+.tp-thumbs img {
+	width: 100%;
+}
+.tp-bannertimer {
+	background: rgba(255,255,255,0.5);
+	height: 7px;
+	margin-top: -8px;
+	position: relative;
+	z-index: 22;
+}
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+	#rev_slider_4_wrapper .info h3{font-size: 14px !important;}
+}
+
